@@ -1,5 +1,5 @@
 // src/services/authService.js
-const API_BASE = "http://localhost:8080/api/auth";
+const API_BASE = "https://linkedbus-backend-production.up.railway.app/api/auth";
 
 /**
  * Registration step 1: request OTP (sends OTP to email)
