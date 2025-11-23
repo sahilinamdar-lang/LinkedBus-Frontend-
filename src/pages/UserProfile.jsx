@@ -26,7 +26,7 @@ const UserProfile = () => {
 
   const fetchUserData = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/api/users/${currentUserId}`, {
+      const res = await axios.get(`https://linkedbus-backend-production.up.railway.app/api/users/${currentUserId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUser(res.data);
@@ -46,7 +46,7 @@ const UserProfile = () => {
     e.preventDefault();
     setSavingProfile(true);
     try {
-      const res = await axios.put(`http://localhost:8080/api/users/${currentUserId}`, form, {
+      const res = await axios.put(`https://linkedbus-backend-production.up.railway.app/api/users/${currentUserId}`, form, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUser(res.data);
@@ -68,7 +68,7 @@ const UserProfile = () => {
     setChangingPassword(true);
     try {
       await axios.put(
-        `http://localhost:8080/api/users/${currentUserId}/change-password`,
+        `https://linkedbus-backend-production.up.railway.app/api/users/${currentUserId}/change-password`,
         { oldPassword: passwords.oldPassword, newPassword: passwords.newPassword },
         { headers: { Authorization: `Bearer ${token}` } }
       );
