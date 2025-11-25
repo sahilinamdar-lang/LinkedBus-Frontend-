@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const RAZORPAY_KEY_ID = "rzp_test_RZkwDvdhsBTUfQ"; 
 
-const DEFAULT_API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8080";
+const DEFAULT_API_BASE = import.meta.env.VITE_API_URL || "https://linkedbus-backend-production.up.railway.app";
 
 async function loadRazorpayScript({ src = "https://checkout.razorpay.com/v1/checkout.js", timeout = 12000 } = {}) {
   return new Promise((resolve, reject) => {
@@ -203,9 +203,9 @@ export default function PaymentPage() {
           }
         },
         prefill: {
-          name: user?.name || "Test User",
-          email: user?.email || "test@example.com",
-          contact: user?.contact || "9999999999",
+          name: user?.name || "Sahil bhai",
+          email: user?.email || "Sahil@gmail.com",
+          contact: user?.contact || "9890656246",
         },
         theme: { color: "#d84e55" },
       };
