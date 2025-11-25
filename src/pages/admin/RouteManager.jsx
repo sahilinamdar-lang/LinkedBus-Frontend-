@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function RouteManager() {
   const navigate = useNavigate();
-  const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8080";
+  const API_BASE = import.meta.env.VITE_API_URL || "https://linkedbus-backend-production.up.railway.app";
   const token = localStorage.getItem("token");
 
   const [routes, setRoutes] = useState([]);
