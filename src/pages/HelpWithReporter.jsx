@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState, useRef } from "react";
 
-const SUPPORT_ENDPOINT = "http://localhost:8080/api/support/report";
+const SUPPORT_ENDPOINT = "https://linkedbus-backend-production.up.railway.app/api/support/report";
 const COMPANY_EMAIL = "inamdarsahil708@gmail.com";
 
 const nowIso = () => new Date().toISOString();
