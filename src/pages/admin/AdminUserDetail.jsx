@@ -4,7 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 export default function AdminUserDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8080";
+  const API_BASE = import.meta.env.VITE_API_URL || "https://linkedbus-backend-production.up.railway.app";
   const token = localStorage.getItem("token");
 
   const [user, setUser] = useState(null);
