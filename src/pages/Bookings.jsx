@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 
 
-const API_BASE = "http://localhost:8080/api";
+const API_BASE = "https://linkedbus-backend-production.up.railway.app/api";
 const Bookings = () => {
   const [bookings, setBookings] = useState([]);
   const [loadingBookings, setLoadingBookings] = useState(true);
