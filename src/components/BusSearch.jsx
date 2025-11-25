@@ -28,7 +28,7 @@ const BusSearch = ({ onSearchSuccess }) => {
 
         setLoading(true);
         try {
-            const response = await apiClient.get('/bus/search', {
+            const response = await apiClient.get('api/bus/search', {
                 params: { source, destination, date }
             });
             onSearchSuccess(response.data);
