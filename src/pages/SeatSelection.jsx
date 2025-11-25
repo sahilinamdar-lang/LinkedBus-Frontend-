@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const MAX_SELECTABLE = 6;
 const DEFAULT_FARE = 600;
-const BACKEND_BASE_URL = "http://localhost:8080/api";
+const BACKEND_BASE_URL = "https://linkedbus-backend-production.up.railway.app/api";
 
 const SeatSelection = () => {
   const { busId } = useParams();
